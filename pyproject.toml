@@ -23,7 +23,9 @@ authors = [
 ]
 
 dependencies = [
-    # Add dependencies as needed
+    "fastmcp>=2.13.2",
+    "jsonlines>=4.0.0",
+    "matplotlib>=3.10.7",
     "verl[vllm]>=0.6.1",
 ]
 
