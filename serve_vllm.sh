@@ -4,14 +4,14 @@
 # Qwen3-0.6B                   Qwen3-14B   Qwen3-30B-A3B-Thinking-2507    Qwen3-4B   Qwen3-8B                Qwen3-VL-2B-Instruct         Qwen3-VL-32B-Instruct      Qwen3-VL-8B-Instruct
 set -e
 
-MODEL="Qwen3-0.6B"
+MODEL="Qwen3-VL-8B-Instruct"
 
 PORT="30001"
 
 # bfloat16  → 原始 bf16 模型（显存最多，精度最高）
 # float16   → fp16 模型
 # auto      → AWQ/GPTQ 量化模型用这个
-DTYPE="bfloat16"
+DTYPE="auto"
 
 BASE_DIR="/inspire/hdd/project/multimodal-machine-learning-and-generative-model/public/models/Qwen"
 MODEL_PATH="$BASE_DIR/$MODEL"
@@ -19,7 +19,8 @@ MODEL_PATH="$BASE_DIR/$MODEL"
 EXTRA_ARGS=""
 if [[ $MODEL == *"VL"* ]]; then
     # 所有 VL 模型自动加上多模态参数
-    EXTRA_ARGS="--limit-mm-per-prompt image=10,video=10 --max-model-len 32768"
+    # EXTRA_ARGS="--limit-mm-per-prompt· image=10,video=10 --max-model-len 32768"
+    EXTRA_ARGS="--max-model-len 32768"·
 elif [[ $MODEL == *"235B"* ]] || [[ $MODEL == *"72B"* ]]; then
     # 超大模型默认开 AWQ + 8卡
     DTYPE="auto"
