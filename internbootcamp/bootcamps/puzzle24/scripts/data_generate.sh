@@ -10,7 +10,7 @@ PROJECT_ROOT="$(cd "$SCRIPT_DIR/../../../.." && pwd)"
 cd "$PROJECT_ROOT"
 
 # 数据生成
-python -m internbootcamp.utils.data_generation \
+uv run python -m internbootcamp.utils.data_generation \
     --instruction-config internbootcamp/bootcamps/puzzle24/configs/puzzle24_instruction_config.yaml \
     --output-dir data/puzzle24/ \
     --split-samples train:0,test:10 \

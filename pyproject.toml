@@ -26,6 +26,7 @@ dependencies = [
     "fastmcp>=2.13.2",
     "jsonlines>=4.0.0",
     "matplotlib>=3.10.7",
+    "tenacity>=9.1.2",
     "verl[vllm]>=0.6.1",
 ]
 

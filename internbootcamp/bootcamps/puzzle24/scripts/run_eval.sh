@@ -3,8 +3,8 @@
 # 用法: bash scripts/run_eval.sh
 
 # 评估模型
-python -m internbootcamp.utils.run_evaluation \
-  --dataset-path data/puzzle24/puzzle24_20251127040049_test.jsonl \
+uv run python -m internbootcamp.utils.run_evaluation \
+  --dataset-path data/puzzle24/puzzle24_20251202075822_test.jsonl \
   --output-dir outputs/puzzle24/ \
   --api-key "$API_KEY" \
   --api-url "$API_URL" \
