@@ -1,5 +1,5 @@
 #!/bin/bash
-# 数据生成脚本 - Puzzle24
+# 数据生成脚本 - RLVL_MM
 # 用法: bash scripts/data_generate.sh
 
 # 获取脚本所在目录的绝对路径
@@ -11,9 +11,9 @@ cd "$PROJECT_ROOT"
 
 # 数据生成
 python -m internbootcamp.utils.data_generation \
-    --instruction-config internbootcamp/bootcamps/puzzle24/configs/puzzle24_instruction_config.yaml \
-    --output-dir data/puzzle24/ \
+    --instruction-config internbootcamp/bootcamps/RLVR_MM/configs/binairo_instruction_config.yaml \
+    --output-dir data/binairo/ \
     --split-samples train:0,test:10 \
     --shuffle
 
-echo "数据生成完成！输出目录: data/puzzle24/"
+echo "数据生成完成！输出目录: data/binairo/"

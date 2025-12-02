@@ -1,14 +1,14 @@
 import os
 import json
-from instruction import binairoInstructionGenerator
-from reward import binairoRewardCalculator
+from internbootcamp.bootcamps.RLVR_MM.instruction_generator import binairoInstructionGenerator
+from internbootcamp.bootcamps.RLVR_MM.reward_calculator import binairoRewardCalculator
 
 def main():
     # 1. Initialize Generator
     print("Initializing Generator...")
     # Create output directory if it doesn't exist
-    os.makedirs("output/binairo", exist_ok=True)
-    generator = binairoInstructionGenerator(output_folder="output/binairo")
+    os.makedirs("data/binairo", exist_ok=True)
+    generator = binairoInstructionGenerator(output_folder="data/binairo")
     
     # 2. Generate Case
     print("Generating Case...")

@@ -40,7 +40,7 @@ echo "dtype：$DTYPE"
 echo "额外参数：$EXTRA_ARGS"
 echo "=================================================="
 
-uv run vllm serve "$MODEL_PATH" \
+vllm serve "$MODEL_PATH" \
     --host 0.0.0.0 \
     --port "$PORT" \
     --dtype "$DTYPE" \

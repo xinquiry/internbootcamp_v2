@@ -1,7 +1,4 @@
-try:
-    from internbootcamp.src.base_reward_calculator import BaseRewardCalculator
-except ImportError:
-    from mock_internbootcamp import BaseRewardCalculator
+from internbootcamp.src.base_reward_calculator import BaseRewardCalculator
 
 import json
 import re

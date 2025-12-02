@@ -1,12 +1,9 @@
-try:
-    from internbootcamp.src.base_instruction_generator import BaseInstructionGenerator
-except ImportError:
-    from mock_internbootcamp import BaseInstructionGenerator
+from internbootcamp.src.base_instruction_generator import BaseInstructionGenerator
 
 from typing import Dict, Any, Optional
 import random
 import os
-from binairo_standalone import BinairoGenerator
+from .binairo_standalone import BinairoGenerator
 
 class binairoInstructionGenerator(BaseInstructionGenerator):
     """自定义指令生成器"""
