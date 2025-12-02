@@ -163,3 +163,4 @@ tensorboard_log/
 verl/Bootcampv2/Retro/libs/
 
 temp/
+!outputs/

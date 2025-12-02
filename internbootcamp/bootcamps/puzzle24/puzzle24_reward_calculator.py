@@ -1,5 +1,4 @@
 import re
-from typing import Optional, Dict, Any
 
 from sympy.parsing.sympy_parser import parse_expr
 
@@ -71,6 +70,6 @@ class Puzzle24RewardCalculator(BaseRewardCalculator):
                     reward = 0.01
                 else:
                     reward = 1.0
-            except Exception as e:
+            except Exception:
                 reward = 0.01
         return reward
