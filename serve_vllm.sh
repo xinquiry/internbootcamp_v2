@@ -4,7 +4,7 @@
 # Qwen3-0.6B                   Qwen3-14B   Qwen3-30B-A3B-Thinking-2507    Qwen3-4B   Qwen3-8B                Qwen3-VL-2B-Instruct         Qwen3-VL-32B-Instruct      Qwen3-VL-8B-Instruct
 set -e
 
-MODEL="Qwen3-14B"
+MODEL="Qwen3-32B"
 
 PORT="30010"
 
@@ -25,7 +25,7 @@ elif [[ $MODEL == *"235B"* ]] || [[ $MODEL == *"72B"* ]]; then
     DTYPE="auto"
     EXTRA_ARGS="--quantization awq --tensor-parallel-size 8 --max-model-len 16384"
 elif [[ $MODEL == *"32B"* ]]; then
-    EXTRA_ARGS="--tensor-parallel-size 4 --max-model-len 32768"
+    EXTRA_ARGS="--tensor-parallel-size 2 --max-model-len 32768"
 elif [[ $MODEL == *"14B"* ]]; then
     EXTRA_ARGS="--tensor-parallel-size 2 --max-model-len 32768"
 else
