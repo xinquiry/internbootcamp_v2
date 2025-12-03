@@ -13,7 +13,7 @@ cd "$PROJECT_ROOT"
 python -m internbootcamp.utils.data_generation \
     --instruction-config internbootcamp/bootcamps/puzzle24/configs/puzzle24_instruction_config.yaml \
     --output-dir data/puzzle24/ \
-    --split-samples train:0,test:10 \
+    --split-samples train:0,test:100 \
     --shuffle
 
 echo "数据生成完成！输出目录: data/puzzle24/"
