@@ -1,0 +1,62 @@
+Basic Evaluation Information
+Item,Value
+Evaluation Model,/inspire/hdd/project/multimodal-machine-learning-and-generative-model/public/models/Qwen/Qwen3-32B
+Dataset Path,data/binairo/binairo_20251203073257_test.jsonl
+Tool Configuration,Default
+Output Path,outputs/binauro/inspire-hdd-project-multimodal-machine-learning-and-generative-model-public-models-Qwen-Qwen3-32B/eval_results_20251203163832.jsonl
+Max Assistant Turns,
+Max User Turns,
+api_extra_params,{}
+api_extra_headers,{}
+
+Overall Statistics
+Metric,Value
+Total Samples,100
+Successful Samples,72
+Failed Samples,28
+Success Rate,72.00%
+Overall Average Score,0.4700
+
+Data Source Summary Statistics
+Data Source,Total Samples,,Success Count,Failed Count,Success Rate,Average Score,Max Score,Min Score,Avg Assistant Turns,Avg Tool Calls,Avg Interaction Turns,Avg Initial Prompt Tokens,Avg Completion Tokens,Avg Global Sequence Tokens,Avg Cumulative Prompt Tokens,Avg Total Tokens
+bootcamp/binairo,100,,72,28,72.00%,0.6528,1.0000,0.0000,1.00,0.00,1.00,428.81,8070.75,8499.56,428.81,8499.56
+
+Generator Detailed Statistics
+Data Source,Generator Name,Sample Count,Success Count,Failed Count,Success Rate,Average Score,Max Score,Min Score,Avg Assistant Turns,Avg Tool Calls,Avg Interaction Turns,Avg Initial Prompt Tokens,Avg Completion Tokens,Avg Cumulative Prompt Tokens,Avg Global Sequence Tokens,Avg Total Tokens
+bootcamp/binairo,easy,50,41,9,82.00%,0.8780,1.0000,0.0000,1.00,0.00,1.00,433.71,5991.59,6425.29,433.71,6425.29
+bootcamp/binairo,hard,50,31,19,62.00%,0.3548,1.0000,0.0000,1.00,0.00,1.00,422.32,10820.61,11242.94,422.32,11242.94
+
+Error Type Statistics
+Error Type,Occurrence Count
+Request timed out.,28
+
+Detailed Error Information
+Generator Name,Data Source,Sample ID,Error Message
+hard,bootcamp/binairo,Unknown,Request timed out.
+hard,bootcamp/binairo,Unknown,Request timed out.
+hard,bootcamp/binairo,Unknown,Request timed out.
+hard,bootcamp/binairo,Unknown,Request timed out.
+hard,bootcamp/binairo,Unknown,Request timed out.
+easy,bootcamp/binairo,Unknown,Request timed out.
+easy,bootcamp/binairo,Unknown,Request timed out.
+easy,bootcamp/binairo,Unknown,Request timed out.
+easy,bootcamp/binairo,Unknown,Request timed out.
+hard,bootcamp/binairo,Unknown,Request timed out.
+easy,bootcamp/binairo,Unknown,Request timed out.
+easy,bootcamp/binairo,Unknown,Request timed out.
+hard,bootcamp/binairo,Unknown,Request timed out.
+hard,bootcamp/binairo,Unknown,Request timed out.
+hard,bootcamp/binairo,Unknown,Request timed out.
+hard,bootcamp/binairo,Unknown,Request timed out.
+hard,bootcamp/binairo,Unknown,Request timed out.
+hard,bootcamp/binairo,Unknown,Request timed out.
+hard,bootcamp/binairo,Unknown,Request timed out.
+easy,bootcamp/binairo,Unknown,Request timed out.
+hard,bootcamp/binairo,Unknown,Request timed out.
+hard,bootcamp/binairo,Unknown,Request timed out.
+easy,bootcamp/binairo,Unknown,Request timed out.
+hard,bootcamp/binairo,Unknown,Request timed out.
+easy,bootcamp/binairo,Unknown,Request timed out.
+hard,bootcamp/binairo,Unknown,Request timed out.
+hard,bootcamp/binairo,Unknown,Request timed out.
+hard,bootcamp/binairo,Unknown,Request timed out.
