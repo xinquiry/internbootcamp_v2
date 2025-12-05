@@ -1,0 +1,28 @@
+Basic Evaluation Information
+Item,Value
+Evaluation Model,/inspire/hdd/project/multimodal-machine-learning-and-generative-model/public/models/Qwen/Qwen3-8B
+Dataset Path,data/puzzle24/puzzle24_20251203072550_test.jsonl
+Tool Configuration,Default
+Output Path,outputs/puzzle24/inspire-hdd-project-multimodal-machine-learning-and-generative-model-public-models-Qwen-Qwen3-8B/eval_results_20251204154652.jsonl
+Max Assistant Turns,
+Max User Turns,
+api_extra_params,{}
+api_extra_headers,{}
+
+Overall Statistics
+Metric,Value
+Total Samples,100
+Successful Samples,100
+Failed Samples,0
+Success Rate,100.00%
+Overall Average Score,0.9604
+
+Data Source Summary Statistics
+Data Source,Total Samples,,Success Count,Failed Count,Success Rate,Average Score,Max Score,Min Score,Avg Assistant Turns,Avg Tool Calls,Avg Interaction Turns,Avg Initial Prompt Tokens,Avg Completion Tokens,Avg Global Sequence Tokens,Avg Cumulative Prompt Tokens,Avg Total Tokens
+bootcamp/Puzzle24,100,,100,0,100.00%,0.9604,1.0000,0.0100,1.00,0.00,1.00,102.16,2719.90,2822.06,102.16,2822.06
+
+Generator Detailed Statistics
+Data Source,Generator Name,Sample Count,Success Count,Failed Count,Success Rate,Average Score,Max Score,Min Score,Avg Assistant Turns,Avg Tool Calls,Avg Interaction Turns,Avg Initial Prompt Tokens,Avg Completion Tokens,Avg Cumulative Prompt Tokens,Avg Global Sequence Tokens,Avg Total Tokens
+bootcamp/Puzzle24,easy,50,50,0,100.00%,0.9406,1.0000,0.0100,1.00,0.00,1.00,102.32,2981.82,3084.14,102.32,3084.14
+bootcamp/Puzzle24,hard,50,50,0,100.00%,0.9802,1.0000,0.0100,1.00,0.00,1.00,102.00,2457.98,2559.98,102.00,2559.98
+

@@ -4,7 +4,7 @@
 # Qwen3-0.6B                   Qwen3-14B   Qwen3-30B-A3B-Thinking-2507    Qwen3-4B   Qwen3-8B                Qwen3-VL-2B-Instruct         Qwen3-VL-32B-Instruct      Qwen3-VL-8B-Instruct
 set -e
 
-MODEL="Qwen3-32B"
+MODEL="Qwen3-8B"
 
 PORT="30010"
 
