@@ -8,7 +8,7 @@ python -m internbootcamp.utils.run_evaluation \
   --output-dir outputs/binauro/ \
   --api-key "null" \
   --api-url "http://127.0.0.1:30010/v1" \
-  --api-model "/inspire/hdd/project/multimodal-machine-learning-and-generative-model/public/models/Qwen/Qwen3-8B" \
+  --api-model "/inspire/hdd/project/multimodal-machine-learning-and-generative-model/public/models/Qwen/Qwen3-4B-Thinking-2507" \
   --reward-calculator-class "internbootcamp.bootcamps.RLVR_MM.reward_calculator.binairoRewardCalculator" \
   --max-concurrent 5 \
   --verbose
