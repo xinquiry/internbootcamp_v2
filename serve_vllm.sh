@@ -1,16 +1,18 @@
 #!/usr/bin/env bash
 
-# Qwen2.5-VL-72B-Instruct-AWQ  Qwen3-1.7B  Qwen3-235B-A22B-Thinking-2507    Qwen3-4B-Thinking-2507  Qwen3-VL-235B-A22B-Instruct  Qwen3-VL-4B-Instruct
-# Qwen3-0.6B                      Qwen3-30B-A3B-Thinking-2507    Qwen3-4B                   Qwen3-VL-2B-Instruct         Qwen3-VL-32B-Instruct      
+# Qwen2.5-VL-72B-Instruct-AWQ  Qwen3-1.7B  Qwen3-235B-A22B-Thinking-2507     Qwen3-VL-235B-A22B-Instruct  Qwen3-VL-4B-Instruct
+#                        Qwen3-4B                   Qwen3-VL-2B-Instruct         Qwen3-VL-32B-Instruct      
 
 # Finished
+# Qwen3-0.6B
 # Qwen3-14B Qwen3-32B Qwen3-8B
 # Qwen3-VL-8B-Instruct
 # Qwen3-VL-30B-A3B-Instruct
+# Qwen3-4B-Thinking-2507
 
 set -e
 
-MODEL="Qwen3-4B-Thinking-2507"
+MODEL="Qwen3-30B-A3B-Thinking-2507"
 
 PORT="30010"
 
@@ -35,7 +37,7 @@ elif [[ $MODEL == *"32B"* ]]; then
 elif [[ $MODEL == *"14B"* ]]; then
     EXTRA_ARGS="--tensor-parallel-size 2 --max-model-len 32768"
 else
-    EXTRA_ARGS="--max-model-len 32768"
+    EXTRA_ARGS="--tensor-parallel-size 2 --max-model-len 32768"
 fi
 
 echo "=================================================="

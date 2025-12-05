@@ -1,0 +1,28 @@
+Basic Evaluation Information
+Item,Value
+Evaluation Model,/inspire/hdd/project/multimodal-machine-learning-and-generative-model/public/models/Qwen/Qwen3-0.6B
+Dataset Path,data/binairo/binairo_20251203073257_test.jsonl
+Tool Configuration,Default
+Output Path,outputs/binauro/inspire-hdd-project-multimodal-machine-learning-and-generative-model-public-models-Qwen-Qwen3-0.6B/eval_results_20251205105228.jsonl
+Max Assistant Turns,
+Max User Turns,
+api_extra_params,{}
+api_extra_headers,{}
+
+Overall Statistics
+Metric,Value
+Total Samples,100
+Successful Samples,100
+Failed Samples,0
+Success Rate,100.00%
+Overall Average Score,0.0000
+
+Data Source Summary Statistics
+Data Source,Total Samples,,Success Count,Failed Count,Success Rate,Average Score,Max Score,Min Score,Avg Assistant Turns,Avg Tool Calls,Avg Interaction Turns,Avg Initial Prompt Tokens,Avg Completion Tokens,Avg Global Sequence Tokens,Avg Cumulative Prompt Tokens,Avg Total Tokens
+bootcamp/binairo,100,,100,0,100.00%,0.0000,0.0000,0.0000,1.00,0.00,1.00,426.88,11382.42,11809.30,426.88,11809.30
+
+Generator Detailed Statistics
+Data Source,Generator Name,Sample Count,Success Count,Failed Count,Success Rate,Average Score,Max Score,Min Score,Avg Assistant Turns,Avg Tool Calls,Avg Interaction Turns,Avg Initial Prompt Tokens,Avg Completion Tokens,Avg Cumulative Prompt Tokens,Avg Global Sequence Tokens,Avg Total Tokens
+bootcamp/binairo,easy,50,50,0,100.00%,0.0000,0.0000,0.0000,1.00,0.00,1.00,432.54,10760.28,11192.82,432.54,11192.82
+bootcamp/binairo,hard,50,50,0,100.00%,0.0000,0.0000,0.0000,1.00,0.00,1.00,421.22,12004.56,12425.78,421.22,12425.78
+
