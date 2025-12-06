@@ -1,11 +1,15 @@
 #!/usr/bin/env bash
 
-# Qwen2.5-VL-72B-Instruct-AWQ    Qwen3-235B-A22B-Thinking-2507     Qwen3-VL-235B-A22B-Instruct  Qwen3-VL-4B-Instruct
-#                                           Qwen3-VL-2B-Instruct               
+# Too large
+# Qwen2.5-VL-72B-Instruct-AWQ    Qwen3-235B-A22B-Thinking-2507     Qwen3-VL-235B-A22B-Instruct 
+
+# TODO
+#              
 
 # Finished
-# Qwen3-0.6B Qwen3-4B
+# Qwen3-0.6B Qwen3-1.7B Qwen3-4B
 # Qwen3-14B Qwen3-32B Qwen3-8B
+# Qwen3-VL-4B-Instruct
 # Qwen3-VL-8B-Instruct
 # Qwen3-VL-30B-A3B-Instruct
 # Qwen3-VL-32B-Instruct
@@ -14,7 +18,7 @@
 
 set -e
 
-MODEL="Qwen3-1.7B"
+MODEL="Qwen3-VL-2B-Instruct"
 
 PORT="30010"
 
