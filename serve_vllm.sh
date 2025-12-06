@@ -9,6 +9,7 @@
 # Finished
 # Qwen3-0.6B Qwen3-1.7B Qwen3-4B
 # Qwen3-14B Qwen3-32B Qwen3-8B
+# Qwen3-VL-2B-Instruct
 # Qwen3-VL-4B-Instruct
 # Qwen3-VL-8B-Instruct
 # Qwen3-VL-30B-A3B-Instruct
@@ -18,7 +19,7 @@
 
 set -e
 
-MODEL="Qwen3-VL-2B-Instruct"
+MODEL=""
 
 PORT="30010"
 
