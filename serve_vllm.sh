@@ -1,18 +1,20 @@
 #!/usr/bin/env bash
 
-# Qwen2.5-VL-72B-Instruct-AWQ  Qwen3-1.7B  Qwen3-235B-A22B-Thinking-2507     Qwen3-VL-235B-A22B-Instruct  Qwen3-VL-4B-Instruct
-#                        Qwen3-4B                   Qwen3-VL-2B-Instruct         Qwen3-VL-32B-Instruct      
+# Qwen2.5-VL-72B-Instruct-AWQ    Qwen3-235B-A22B-Thinking-2507     Qwen3-VL-235B-A22B-Instruct  Qwen3-VL-4B-Instruct
+#                                           Qwen3-VL-2B-Instruct               
 
 # Finished
-# Qwen3-0.6B
+# Qwen3-0.6B Qwen3-4B
 # Qwen3-14B Qwen3-32B Qwen3-8B
 # Qwen3-VL-8B-Instruct
 # Qwen3-VL-30B-A3B-Instruct
+# Qwen3-VL-32B-Instruct
 # Qwen3-4B-Thinking-2507
+# Qwen3-30B-A3B-Thinking-2507
 
 set -e
 
-MODEL="Qwen3-30B-A3B-Thinking-2507"
+MODEL="Qwen3-1.7B"
 
 PORT="30010"
 
@@ -28,7 +30,7 @@ EXTRA_ARGS=""
 if [[ $MODEL == *"VL"* ]]; then
     # 所有 VL 模型自动加上多模态参数
     # EXTRA_ARGS="--limit-mm-per-prompt· image=10,video=10 --max-model-len 32768"
-    EXTRA_ARGS="--max-model-len 32768 --tensor-parallel-size 2"
+    EXTRA_ARGS="--max-model-len 27440 --tensor-parallel-size 2"
 elif [[ $MODEL == *"235B"* ]] || [[ $MODEL == *"72B"* ]]; then
     DTYPE="auto"
     EXTRA_ARGS="--quantization awq --tensor-parallel-size 8 --max-model-len 16384"
