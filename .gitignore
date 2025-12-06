@@ -149,7 +149,7 @@ docs/
 .vscode
 
 # data
-data
+!data
 ckpts/
 verl/Bootcampv2/example_bootcamp/data
 verl/Bootcampv2/example_bootcamp/examples/.efc_17079620295849351123_2103462685864526653_1754363080442052_run_mcp_server.sh
