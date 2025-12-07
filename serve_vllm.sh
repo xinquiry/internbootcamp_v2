@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
 # Too large
-# Qwen2.5-VL-72B-Instruct-AWQ    Qwen3-235B-A22B-Thinking-2507     Qwen3-VL-235B-A22B-Instruct 
+# Qwen2.5-VL-72B-Instruct-AWQ    Qwen3-235B-A22B-Thinking-2507     Qwen3-VL-235B-A22B-Instruct
 
 # TODO
-#              
+#
 
 # Finished
 # Qwen3-0.6B Qwen3-1.7B Qwen3-4B
@@ -20,12 +20,7 @@
 set -e
 
 MODEL=""
-
 PORT="30010"
-
-# bfloat16  → 原始 bf16 模型（显存最多，精度最高）
-# float16   → fp16 模型
-# auto      → AWQ/GPTQ 量化模型用这个
 DTYPE="auto"
 
 BASE_DIR="/inspire/hdd/project/multimodal-machine-learning-and-generative-model/public/models/Qwen"
@@ -33,8 +28,6 @@ MODEL_PATH="$BASE_DIR/$MODEL"
 
 EXTRA_ARGS=""
 if [[ $MODEL == *"VL"* ]]; then
-    # 所有 VL 模型自动加上多模态参数
-    # EXTRA_ARGS="--limit-mm-per-prompt· image=10,video=10 --max-model-len 32768"
     EXTRA_ARGS="--max-model-len 27440 --tensor-parallel-size 2"
 elif [[ $MODEL == *"235B"* ]] || [[ $MODEL == *"72B"* ]]; then
     DTYPE="auto"

@@ -11,7 +11,7 @@ cd "$PROJECT_ROOT"
 
 # 数据生成
 python -m internbootcamp.utils.data_generation \
-    --instruction-config internbootcamp/bootcamps/RLVR_MM/configs/binairo_instruction_config.yaml \
+    --instruction-config internbootcamp/bootcamps/binairo/configs/binairo_instruction_config.yaml \
     --output-dir data/binairo/ \
     --split-samples train:0,test:100 \
     --shuffle

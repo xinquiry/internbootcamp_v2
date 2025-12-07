@@ -8,19 +8,19 @@ instruction_generators:
 
 global_config:
   # 指令生成器类的完整路径
-  class_name: "internbootcamp.bootcamps.RLVR_MM.instruction_generator.binairoInstructionGenerator"
-  
+  class_name: "internbootcamp.bootcamps.binairo.instruction_generator.binairoInstructionGenerator"
+
   # 随机种子配置
   enable_random_seed: true
   default_seed: 42
-  
+
   # 数据集划分配置
   default_split_samples:
     train: 1000
     test: 100
-  
+
   # 是否启用数据打乱
   shuffle: true
-  
+
   # 是否生成parquet文件
   gen_parquet: false
